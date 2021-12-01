@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Date Création</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let motor of motos">
+          <tr>
+            <td>{{ motor.idMoto }}</td>
+            <td>{{ motor.modeleMoto }}</td>
+            <td>{{ motor.prixMoto }}</td>
+            <td>{{ motor.dateCreation | date: "dd/MM/yyyy" }}</td>
+
+            <td>
+              <a class="btn btn-danger" (click)="deleteMoto(motor)" >Supprimer</a>
+            </td>
+            <td><a class="btn btn-success" [routerLink]="['/updateMotor',motor.idMoto]">Modifier</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
