@@ -8,6 +8,7 @@ import { AddMotorsComponent } from './add-motors/add-motors.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateMotorComponent } from './update-motor/update-motor.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RechercheParMotardComponent } from './recherche-par-motard/recherche-par-motard.component';
 
 
 
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     MotorsComponent,
     AddMotorsComponent,
     UpdateMotorComponent,
+    RechercheParMotardComponent,
     
   ],
   imports: [
